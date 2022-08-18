@@ -10,7 +10,7 @@
         <button> + </button>
       </div>
       <div v-else>
-        <button>добавить в корзину</button>
+        <button>Добавить в корзину</button>
       </div>
     </div>
   </div>
