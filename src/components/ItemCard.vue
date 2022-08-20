@@ -1,16 +1,21 @@
 <template>
   <div>
     <div class="shop-card" :style="{'background-image': 'url('+ data.image +')'}">
-      <div class="card-name">
-        {{data.name}}
-      </div>
-      <div v-if="data.count > 0">
-        <button> - </button>
-        <p>0</p>
-        <button> + </button>
-      </div>
-      <div v-else>
-        <button>Добавить в корзину</button>
+      <div class="card-inner">
+        <div class="card-name">
+          {{data.name}}
+        </div>
+        <div class="card-price">
+          {{data.price}}$
+        </div>
+        <div v-if="data.count > 0">
+          <button> - </button>
+          <p>0</p>
+          <button> + </button>
+        </div>
+        <div v-else>
+          <button class="cart-btn">Add To Cart</button>
+        </div>
       </div>
     </div>
   </div>
