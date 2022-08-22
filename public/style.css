@@ -21,6 +21,14 @@ body {
     font-weight: 600;
 }
 
+::selection {
+    background: rgba(0, 0, 0, 0.39);
+}
+
+::-moz-selection {
+    background: rgba(0, 0, 0, 0.39);
+}
+
 .web-title{
     font-size: 3rem;
 }
@@ -87,6 +95,7 @@ body {
 }
 
 .cart-btn{
+    cursor: pointer;
     position: relative;
     background-color: #8876ff;
     border: none;

@@ -9,12 +9,12 @@
           {{data.price}}$
         </div>
         <div v-if="data.count > 0">
-          <button> - </button>
-          <p>0</p>
-          <button> + </button>
+          <button @click="addItem(data, 'add')"> + </button>
+          <p>{{data.count}}</p>
+          <button @click="addItem(data, 'remove')"> - </button>
         </div>
         <div v-else>
-          <button class="cart-btn">Add To Cart</button>
+          <button @click="addItem(data, 'add')" class="cart-btn">Add To Cart</button>
         </div>
       </div>
     </div>
@@ -22,6 +22,7 @@
 </template>
 
 <script>
+
 export default {
   name: "ItemCard",
   props:['data'],
@@ -39,6 +40,15 @@ export default {
       localStorage.setItem('card', JSON.stringify(a));
       product.count++
     },
+    addItem(data, type) {
+      console.log('я сработал')
+      if(type === 'add'){
+        data.count++
+      }
+      else{
+        data.count--
+      }
+    },
     clearCard()
     {
       localStorage.setItem('card','');
@@ -47,7 +57,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-
-</style>
