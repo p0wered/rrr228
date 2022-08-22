@@ -117,5 +117,32 @@ body {
     box-shadow: 0 2px 4px #0000007a;
 }
 
+.btn-box{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 60%;
+}
+
+.btn-main{
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    background-color: #7b6be5;
+    font-size: 25px;
+}
+
+.btn-main:hover{
+    background-color: #7566da;
+}
+
+.btn-main:active{
+    background-color: #7062d2;
+}
+
+
 
 

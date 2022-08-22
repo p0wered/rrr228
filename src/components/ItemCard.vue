@@ -8,10 +8,10 @@
         <div class="card-price">
           {{data.price}}$
         </div>
-        <div v-if="data.count > 0">
-          <button @click="addItem(data, 'add')"> + </button>
-          <p>{{data.count}}</p>
-          <button @click="addItem(data, 'remove')"> - </button>
+        <div v-if="data.count > 0" class="btn-box">
+          <button class="btn-main" @click="addItem(data, 'remove')"> - </button>
+          <p style="margin: 1rem">{{data.count}}</p>
+          <button class="btn-main" @click="addItem(data, 'add')"> + </button>
         </div>
         <div v-else>
           <button @click="addItem(data, 'add')" class="cart-btn">Add To Cart</button>
