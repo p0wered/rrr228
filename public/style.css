@@ -16,8 +16,8 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    color: black;
-    background-color: #ffffff;
+    color: #eaeaea;
+    background-color: #242424;
     font-weight: 600;
 }
 
@@ -52,8 +52,7 @@ body {
     height: 25rem;
     overflow: hidden;
     background-repeat: no-repeat;
-    background-color: #ffffff;
-    background-size: 120%;
+    background-size: 106%;
     background-position: top;
     margin: 1rem;
     border-radius: 10px;
@@ -62,42 +61,51 @@ body {
 }
 
 .shop-card:hover{
-    background-size: 130%;
+    background-size: 116%;
 }
 
 .card-inner{
     position: relative;
     width: 100%;
     height: 9rem;
-    font-size: 23px;
-    background-color: white;
+    font-size: 22px;
+    background-color: #2b2b2b;
     padding: 1rem;
     top: 58px;
     transition: 300ms;
+    font-weight: 800;
+}
+
+.card-price{
+    font-weight: 400;
 }
 
 .card-inner:hover{
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
     position: relative;
     top: 0;
 }
 
 .cart-btn{
     position: relative;
-    background-color: #c9c4dc;
+    background-color: #8876ff;
     border: none;
+    font-weight: 600;
     border-radius: 8px;
     padding: 0.625rem 1.125rem 0.625rem 1.125rem;
-    margin: 1rem 1rem 1rem 1rem;
+    margin-top: 1.425rem;
     transition: 300ms;
+    box-shadow: 0 2px 8px #0000007a;
 }
 
 .cart-btn:hover{
-    background-color: #b3aec5;
+    background-color: #7b6be5;
 }
 
 .cart-btn:active{
     transition: 100ms;
-    background-color: #9f9bb0;
+    background-color: #6e5ed3;
+    box-shadow: 0 2px 4px #0000007a;
 }
 
 

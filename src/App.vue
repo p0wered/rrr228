@@ -33,10 +33,10 @@ export default {
           price: 69.99
         },
         {
-          name: "ADIDAS Old Skool",
-          image: "",
+          name: "Hoodie Child Of Hell",
+          image: "https://sun1-26.userapi.com/impg/QJBeozspEK4m90d1gkf0ft7sBP9Ha7RnsIK1wg/BTDTz2KQh3Q.jpg?size=520x0&quality=95&sign=155f492469cdb00277948c8aa86ffeb4",
           count: 0,
-          price: 1000
+          price: 59.99
         }
       ],
     }
